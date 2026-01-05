@@ -1,0 +1,10 @@
+path: dataset_original
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: Mouse  
+  1: Cat
+  
+

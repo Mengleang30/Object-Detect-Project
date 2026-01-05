@@ -1,0 +1,46 @@
+awscli==1.44.5
+boto3==1.42.10
+botocore==1.42.15
+certifi==2025.11.12
+charset-normalizer==3.4.4
+colorama==0.4.6
+contourpy @ file:///home/conda/feedstock_root/build_artifacts/contourpy_1652954531375/work
+cvdata==0.0.3
+cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1733332471406/work
+docutils==0.19
+fonttools @ file:///home/conda/feedstock_root/build_artifacts/fonttools_1651017726246/work
+idna==3.11
+jmespath==1.0.1
+kiwisolver @ file:///home/conda/feedstock_root/build_artifacts/kiwisolver_1648854394530/work
+lxml==6.0.2
+matplotlib==3.10.6
+munkres==1.1.4
+numpy @ file:///home/task_176157873442292/conda-bld/numpy_and_numpy_base_1761579342817/work/dist/numpy-2.2.5-cp310-cp310-linux_x86_64.whl#sha256=4f111e445ad2d8123363b1599c58ba5214fd56796d9ecdf9b3402f997cfda2ea
+oidv6==1.0.5
+opencv-contrib-python==4.12.0.88
+opencv-python==4.10.0
+opencv-python-headless==4.10.0
+packaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1745345660/work
+pandas==2.3.3
+pillow @ file:///croot/pillow_1744613067434/work
+progressbar2==4.5.0
+psutil==7.1.0
+pyasn1==0.6.1
+pycryptodome==3.23.0
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pyparsing_1758436411/work
+PySide6==6.7.3
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work
+python-utils==3.9.1
+pytz==2025.2
+PyYAML==6.0.3
+requests==2.32.5
+rsa==4.7.2
+s3transfer==0.16.0
+shiboken6==6.7.3
+six @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_six_1753199211/work
+tornado @ file:///home/conda/feedstock_root/build_artifacts/tornado_1648827254365/work
+tqdm==4.67.1
+typing_extensions==4.15.0
+tzdata==2025.3
+unicodedata2 @ file:///home/conda/feedstock_root/build_artifacts/unicodedata2_1649111910890/work
+urllib3==2.6.2
