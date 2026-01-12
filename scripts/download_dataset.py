@@ -2,12 +2,21 @@ import fiftyone as fo
 import fiftyone.zoo as foz
 import os
 
-CLASSES = ["Mouse", "Cat"]
-EXPORT_DIR = "dataset_original"
+# CLASSES = ["Mouse", "Cat"]
+CLASSES = ["Cat", "Mouse (animal)"]
+
+
+# Get the directory of the script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+# Get the parent directory of the script's directory (project root)
+project_root = os.path.dirname(script_dir)
+# Define the export directory relative to the project root
+EXPORT_DIR = os.path.join(project_root, "dataset_original")
+
 MAX_SAMPLES = {
-    "train": 20,
-    "validation": 10,
-    "test": 10,
+    "train": 900,
+    "validation": 100,
+    "test": 100,
 }
 
 print("Downloading and exporting train split...")

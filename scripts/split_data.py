@@ -6,8 +6,8 @@ import shutil
 # Define paths
 train_img_path = "dataset_original/images/train/mouse"
 train_label_path = "dataset_original/labels/train/mouse"
-val_img_path = "dataset_original/images/val/mouse"
-val_label_path = "dataset_original/labels/val/mouse"
+val_img_path = "dataset_original/images/validation/mouse"
+val_label_path = "dataset_original/labels/validation/mouse"
 
 # Get all image files
 img_files = glob.glob(os.path.join(train_img_path, "*.jpg"))

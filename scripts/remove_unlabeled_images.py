@@ -35,8 +35,8 @@ if __name__ == "__main__":
     remove_unlabeled_images(train_img_path, train_label_path)
 
     # Process validation set
-    val_img_path = os.path.join(base_dataset_path, "images", "val", "mouse")
-    val_label_path = os.path.join(base_dataset_path, "labels", "val", "mouse")
+    val_img_path = os.path.join(base_dataset_path, "images", "validation", "mouse")
+    val_label_path = os.path.join(base_dataset_path, "labels", "validation", "mouse")
     remove_unlabeled_images(val_img_path, val_label_path)
 
     # Process test set

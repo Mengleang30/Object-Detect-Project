@@ -8,7 +8,7 @@ def enhance_and_copy_dataset(original_base, enhanced_base, contrast_factor=1.2, 
     Enhances images from the original dataset and saves them to a new location,
     copying over the corresponding labels.
     """
-    for data_split in ["train", "val", "test"]:
+    for data_split in ["train", "validation", "test"]:
         original_img_dir = os.path.join(original_base, "images", data_split)
         original_label_dir = os.path.join(original_base, "labels", data_split)
         

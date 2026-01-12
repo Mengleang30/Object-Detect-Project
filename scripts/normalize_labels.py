@@ -2,7 +2,7 @@ import os
 import glob
 from PIL import Image
 
-def normalize_yolo_labels(image_dir, label_dir, class_name_to_id={'mouse': 0}):
+def normalize_yolo_labels(image_dir, label_dir, class_name_to_id={'cat': 0, 'mouse': 1}):
     print(f"Normalizing labels in {label_dir} for images in {image_dir}")
     
     # Iterate through all image files in the directory
@@ -76,18 +76,18 @@ if __name__ == "__main__":
     base_dataset_path = "dataset_original" 
     
     # Process training set
-    train_img_path = os.path.join(base_dataset_path, "images", "train", "mouse")
-    train_label_path = os.path.join(base_dataset_path, "labels", "train", "mouse")
+    train_img_path = os.path.join(base_dataset_path, "images", "train")
+    train_label_path = os.path.join(base_dataset_path, "labels", "train")
     normalize_yolo_labels(train_img_path, train_label_path)
 
     # Process validation set
-    val_img_path = os.path.join(base_dataset_path, "images", "val", "mouse")
-    val_label_path = os.path.join(base_dataset_path, "labels", "val", "mouse")
+    val_img_path = os.path.join(base_dataset_path, "images", "validation")
+    val_label_path = os.path.join(base_dataset_path, "labels", "validation")
     normalize_yolo_labels(val_img_path, val_label_path)
 
-    # Process test set (currently empty, but good to include for future)
-    test_img_path = os.path.join(base_dataset_path, "images", "test", "mouse")
-    test_label_path = os.path.join(base_dataset_path, "labels", "test", "mouse")
+    # Process test set
+    test_img_path = os.path.join(base_dataset_path, "images", "test")
+    test_label_path = os.path.join(base_dataset_path, "labels", "test")
     normalize_yolo_labels(test_img_path, test_label_path)
 
     print("Label normalization complete.")

@@ -3,7 +3,7 @@ __pycache__/
 .env/
 env/
 venv/
-dataset_original/
-dataset_enhanced/
-runs/
+dataset_original/*
+dataset_enhanced/*
+runs/*
 *.weights

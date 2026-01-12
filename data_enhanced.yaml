@@ -1,6 +1,6 @@
 path: dataset_enhanced
 train: images/train
-val: images/val
+val: images/validation
 test: images/test
 
 names:
