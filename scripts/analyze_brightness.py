@@ -13,7 +13,7 @@ def analyze_images(image_dirs):
             continue
             
         print(f"\nAnalyzing images in: {image_dir}")
-        image_files = glob.glob(os.path.join(image_dir, "*.jpg"))
+        image_files = glob.glob(os.path.join(image_dir, "*.*"))
         
         if not image_files:
             print("No images found to analyze.")
@@ -50,8 +50,8 @@ def analyze_images(image_dirs):
 if __name__ == "__main__":
     base_dataset_path = "dataset_original"
     dirs_to_analyze = [
-        os.path.join(base_dataset_path, "images", "train", "mouse"),
-        os.path.join(base_dataset_path, "images", "val", "mouse"),
-        os.path.join(base_dataset_path, "images", "test", "mouse")
+        os.path.join(base_dataset_path, "images", "train"),
+        os.path.join(base_dataset_path, "images", "val"),
+        os.path.join(base_dataset_path, "images", "test")
     ]
     analyze_images(dirs_to_analyze)

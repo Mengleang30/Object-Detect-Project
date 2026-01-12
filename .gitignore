@@ -4,6 +4,9 @@ __pycache__/
 env/
 venv/
 dataset_original/*
+!dataset_original/.gitkeep
 dataset_enhanced/*
+!dataset_enhanced/.gitkeep
 runs/*
+!runs/.gitkeep
 *.weights
