@@ -4,5 +4,4 @@ val: images/validation
 test: images/test
 
 names:
-  0: Mouse
-  1: Cat
+  0: mouse

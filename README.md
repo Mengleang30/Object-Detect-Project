@@ -20,3 +20,19 @@ The training process completed successfully, and the results, including the trai
 ## Further Steps
 
 You can continue to train the model with more epochs, or fine-tune other hyperparameters in `train.py` to further improve its performance. You can also evaluate the model using the `val.py` script or perform inference on new images using the `predict.py` script (if available).
+
+# Instruction how to run
+# install
+pip install -r requirements.txt
+
+# train original
+python train.py --data data.yaml --epochs 50
+
+# train enhanced
+python train.py --data data_enhanced.yaml --epochs 50
+
+# evaluate
+python val.py --weights runs/.../best.pt --data data_enhanced.yaml
+
+# predict demo
+python predict.py --weights runs/.../best.pt --source demo_images/

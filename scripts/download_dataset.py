@@ -3,7 +3,7 @@ import fiftyone.zoo as foz
 import os
 
 # CLASSES = ["Mouse", "Cat"]
-CLASSES = ["Cat", "Mouse (animal)"]
+CLASSES = ["Mouse"]
 
 
 # Get the directory of the script
