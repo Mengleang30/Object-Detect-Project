@@ -7,3 +7,4 @@ dataset_original/*
 dataset_enhanced/*
 runs/*
 *.weights
+dataset_cat/*
